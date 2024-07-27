@@ -1,0 +1,166 @@
+main .cart div .delete-i, main .cart h2, main h2, main .main__banner, header i img, body {
+  width: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #004f50;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header i {
+  width: 35px;
+  cursor: pointer;
+  display: inline-flex;
+}
+header img {
+  width: 100px;
+}
+
+main .main__banner {
+  background-image: url("../img/bannerNike5.jpg");
+  text-align: center;
+  padding: 117px 0;
+  background-size: cover;
+  color: #ffffff;
+  background-position-y: -320px;
+}
+main h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+}
+main banner__desc {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.7;
+}
+main .products {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+main .products .products__articulo {
+  cursor: pointer;
+  text-align: center;
+}
+main .products .products__articulo img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+main .products .products__articulo h3 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+main .products .products__articulo .articulo_precio {
+  font-weight: 300;
+  font-size: 15px;
+}
+main .cart {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 25px;
+  box-sizing: border-box;
+  height: 100%;
+  position: fixed;
+  right: -100%;
+  top: 100px;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+}
+main .cart h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+main .cart div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333333;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+main .cart div img {
+  width: 60px;
+}
+main .cart div .cart__precio {
+  font-weight: 500;
+}
+main .cart div .cart__icon {
+  width: 20px;
+  cursor: pointer;
+}
+@media (max-width: 820px) {
+  header {
+    padding: 15px;
+  }
+  header img {
+    width: 60px;
+  }
+  header i {
+    width: 30px;
+  }
+  main .products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  main .products article img {
+    width: 150px;
+  }
+  main .cart {
+    width: 400px;
+    top: 80px;
+  }
+}
+@media (max-width: 480px) {
+  main .main__banner {
+    padding: 30px 0;
+  }
+  main .main__banner h2 {
+    font-size: 18px;
+  }
+  main .main__banner p {
+    font-size: 16px;
+  }
+  main .products {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  main .products img {
+    max-width: 200px;
+  }
+  main .products h3, main .products p {
+    padding: 10px;
+  }
+  main .cart {
+    box-shadow: none;
+  }
+  main .cart h2 {
+    padding: 15px 0;
+  }
+  main .cart h2 div {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .cart h2 div img {
+    width: 100px;
+  }
+  main .cart h2 div .cart__nombre, main .cart h2 div i {
+    margin: 0;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */
